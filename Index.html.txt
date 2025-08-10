@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolidBuild Construction</title>
+<style>
+body { margin: 0; font-family: Arial, sans-serif; }
+header {
+background: url('construction-bg.jpg') center/cover no-repeat;
+color: white;
+padding: 80px 20px;
+text-align: center;
+}
+header h1 { font-size: 3em; margin: 0; }
+header p { font-size: 1.2em; margin-top: 10px; }
+nav {
+background: #222;
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+}
+nav a:hover { color: #f4b400; }
+section {
+padding: 50px 20px;
+max-width: 1200px;
+margin: auto;
+}
+.services {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+.service {
+flex: 1 1 300px;
+background: #f4f4f4;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+}
+footer {
+background: #222;
+color: white;
+text-align: center;
+padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>SolidBuild Construction</h1>
+<p>Building your vision with quality and precision</p>
+</header>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#about">About Us</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="service">
+<h3>Residential Construction</h3>
+<p>High-quality homes built with attention to detail.</p>
+</div>
+<div class="service">
+<h3>Commercial Projects</h3>
+<p>Efficient, durable, and on-time commercial builds.</p>
+</div>
+<div class="service">
+<h3>Renovations</h3>
+<p>Transforming spaces to match your evolving needs.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>With over 20 years in the industry, SolidBuild Construction delivers projects that exceed expectations. We value craftsmanship, transparency, and customer satisfaction above all else.</p>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: info@solidbuild.com</p>
+<p>Phone: +123 456 7890</p>
+</section>
+
+<footer>
+<p>&copy; 2025 SolidBuild Construction. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
