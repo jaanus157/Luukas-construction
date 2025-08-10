@@ -1,49 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luukas Construction</title>
+    <title>JANLUK - Ehitus ja renoveerimine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: 'Poppins', sans-serif;
             background-color: #f9f9f9;
             color: #333;
         }
         header {
+            position: sticky;
+            top: 0;
             background-color: #1e3d59;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
+            padding: 15px 30px;
             display: flex;
-            justify-content: center;
-            background-color: #16324f;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        header img {
+            height: 50px;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 14px 20px;
-            display: block;
+            margin-left: 20px;
+            font-weight: 500;
         }
         nav a:hover {
-            background-color: #1e3d59;
+            text-decoration: underline;
         }
         .hero {
-            background: url('construction.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('construction.jpg') center/cover no-repeat;
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 120px 20px;
         }
         .hero h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
         }
         .container {
             max-width: 1100px;
             margin: auto;
-            padding: 20px;
+            padding: 40px 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #1e3d59;
+            margin-bottom: 20px;
         }
         .services {
             display: flex;
@@ -54,79 +66,95 @@
             background: white;
             flex: 1 1 calc(33.333% - 20px);
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             text-align: center;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+        .service:hover {
+            transform: translateY(-5px);
         }
         .service img {
             width: 60px;
             margin-bottom: 10px;
+        }
+        .contact {
+            background-color: #16324f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact a {
+            color: #ffd700;
+            text-decoration: none;
         }
         footer {
             background: #1e3d59;
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: 30px;
+            margin-top: 0;
         }
         @media (max-width: 768px) {
             .services { flex-direction: column; }
             .service { flex: 1 1 100%; }
+            nav { display: flex; flex-wrap: wrap; }
+            nav a { margin: 10px 10px 0 0; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Luukas Construction</h1>
-    <p>Quality • Reliability • Innovation</p>
+    <img src="logo.png" alt="JANLUK Logo">
+    <nav>
+        <a href="#about">Meist</a>
+        <a href="#services">Teenused</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <section class="hero">
-    <h1>We Build Your Dreams</h1>
-    <p>From design to completion — we've got you covered.</p>
+    <h1>Ehitus ja renoveerimine sõbraliku lähenemisega</h1>
+    <p>JANLUK aitab Sul luua ja uuendada kodu või äripinda — kvaliteetselt ja südamega.</p>
 </section>
 
 <div class="container" id="about">
-    <h2>About Us</h2>
-    <p>Luukas Construction has been delivering high-quality building projects for over 20 years. We specialize in residential, commercial, and industrial construction, ensuring every project is completed on time and to the highest standards.</p>
+    <h2>Kes me oleme</h2>
+    <p>Oleme väike, aga kogenud ehitus- ja renoveerimisettevõte, kes hindab ausust, täpsust ja kliendi rahulolu. 
+       Meie tiim on tegutsenud juba üle 15 aasta ning meil on hea meel aidata nii väikeste remonttööde kui ka suurte ehitusprojektidega.</p>
 </div>
 
 <div class="container" id="services">
-    <h2>Our Services</h2>
+    <h2>Meie teenused</h2>
     <div class="services">
         <div class="service">
-            <img src="house-icon.png" alt="Residential">
-            <h3>Residential</h3>
-            <p>Custom homes, renovations, and repairs for your perfect living space.</p>
+            <img src="house-icon.png" alt="Renoveerimine">
+            <h3>Renoveerimine</h3>
+            <p>Kodude ja äripindade uuendamine, et need näeksid välja ja tunneksid end nagu uued.</p>
         </div>
         <div class="service">
-            <img src="office-icon.png" alt="Commercial">
-            <h3>Commercial</h3>
-            <p>Offices, retail stores, and business spaces that inspire productivity.</p>
+            <img src="excavator-icon.png" alt="Kaevetööd">
+            <h3>Kaevetööd</h3>
+            <p>Professionaalsed kaevamis- ja pinnasetööd koos vajaliku tehnikaga.</p>
         </div>
         <div class="service">
-            <img src="factory-icon.png" alt="Industrial">
-            <h3>Industrial</h3>
-            <p>Factories, warehouses, and large-scale building projects.</p>
+            <img src="tools-icon.png" alt="Üldehitus">
+            <h3>Üldehitus</h3>
+            <p>Vundamendist viimistluseni — teeme ära kogu töö.</p>
         </div>
     </div>
 </div>
 
-<div class="container" id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:info@luukasconstruction.com">info@luukasconstruction.com</a></p>
-    <p>Phone: +372 5555 5555</p>
-    <p>Location: Tallinn, Estonia</p>
+<div class="contact" id="contact">
+    <h2>Võta meiega ühendust</h2>
+    <p>Email: <a href="mailto:info@janluk.ee">info@janluk.ee</a></p>
+    <p>Telefon: +372 5555 5555</p>
+    <p>Asukoht: Tallinn, Eesti</p>
 </div>
 
 <footer>
-    <p>© 2025 Luukas Construction. All rights reserved.</p>
+    <p>© 2025 JANLUK. Kõik õigused kaitstud.</p>
 </footer>
 
 </body>
